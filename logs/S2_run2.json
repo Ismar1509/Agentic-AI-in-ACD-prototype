@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-06-22T21:01:46.496834+00:00",
+    "scenario": "S2",
+    "run": 2,
+    "agent": "Analyst",
+    "tier": "T1",
+    "content": "{\n  \"triage\":         \"Malicious\",\n  \"confidence\":     \"0.95\",\n  \"recommendation\": \"Escalate-HITL\",\n  \"affected_system\": \"WORKSTATION-014, WORKSTATION-015, WORKSTATION-016\",\n  \"rationale\":      \"The alert contains multiple indicators of compromise (IOCs) consistent with a ransomware attack. The observed behavior includes mass file encryption, lateral movement via SMB, and the use of a known ransomware beacon hash. Additionally, there is no legitimate admin job scheduled for this timeframe, suggesting an unauthorized attempt to spread the malware. Given the critical severity hint and the active ransomware campaign, it is recommended to escalate this alert to a higher level for further investigation and response.\"\n}"
+  },
+  {
+    "timestamp": "2026-06-22T21:03:02.755291+00:00",
+    "scenario": "S2",
+    "run": 2,
+    "agent": "Planner",
+    "tier": "T2",
+    "content": "DECISION: Escalate-HITL\nRULE\\_APPLIED: None\nGUARDRAIL\\_TRIGGERED: False\nPLANNER\\_APPROVED: None\nRATIONALE: The alert contains multiple indicators of compromise (IOCs) consistent with a ransomware attack. The observed behavior includes mass file encryption, lateral movement via SMB, and the use of a known ransomware beacon hash. Additionally, there is no legitimate admin job scheduled for this timeframe, suggesting an unauthorized attempt to spread the malware. Given the critical severity hint and the active ransomware campaign, it is recommended to escalate this alert to a higher level for further investigation and response."
+  },
+  {
+    "timestamp": "2026-06-22T21:03:02.755316+00:00",
+    "scenario": "S2",
+    "run": 2,
+    "agent": "Executor",
+    "tier": "T3",
+    "content": "ACTION_TAKEN: Escalate-HITL\nOUTCOME: Human-Escalation-Logged\nTIMESTAMP: 2026-06-22T21:03:02.755311+00:00\nNOTE: Escalation logged. Human analyst notified."
+  }
+]

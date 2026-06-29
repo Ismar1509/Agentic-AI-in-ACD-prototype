@@ -1,0 +1,10 @@
+scenario_id,run_id,triage,confidence,original_rec,final_action,guardrail_triggered,rule_applied,hard_stop,trace_file
+S1,1,Suspicious,0.75,Monitor,Monitor,False,None,False,logs/S1_run1.json
+S1,2,Suspicious,0.75,Monitor,Monitor,False,None,False,logs/S1_run2.json
+S1,3,Suspicious,0.75,Monitor,Monitor,False,None,False,logs/S1_run3.json
+S2,1,Malicious,0.95,Escalate-HITL,Escalate-HITL,False,None,False,logs/S2_run1.json
+S2,2,Malicious,0.95,Escalate-HITL,Escalate-HITL,False,None,False,logs/S2_run2.json
+S2,3,Suspicious,0.75,Monitor,Monitor,False,None,False,logs/S2_run3.json
+S3,1,Malicious,0.95,Escalate-HITL,Escalate-HITL,False,Multi-turn,False,logs/S3_run1.json
+S3,2,Malicious,0.95,Escalate-HITL,Escalate-HITL,False,Multi-turn,False,logs/S3_run2.json
+S3,3,Malicious,0.95,Escalate-HITL,Escalate-HITL,False,Multi-turn,False,logs/S3_run3.json
